@@ -16,12 +16,58 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#auth-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-align: left;
+}
+
+#login-form,
+#session-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#login-form {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 300px;
+  padding: 10px;
+  background: white;
+  color: #333;
+  border-radius: 4px;
+}
+
+#login-form input {
+  width: 125px;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#login-form label {
+  font-size: 0.85rem;
+}
+
+#session-controls {
+  color: white;
+  font-size: 0.9rem;
+}
+
+#auth-panel button {
+  padding: 7px 10px;
+  font-size: 0.9rem;
 }
 
 header h1 {
@@ -115,10 +161,16 @@ section h3 {
   border: none;
   color: #c62828;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   padding: 2px 5px;
   transition: all 0.2s;
   border-radius: 3px;
+}
+
+#login-required {
+  margin-bottom: 15px;
+  color: #666;
+  font-style: italic;
 }
 
 .delete-btn:hover {
